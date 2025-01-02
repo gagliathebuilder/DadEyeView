@@ -1,66 +1,67 @@
-/* General Styles */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+/* Body Styling */
+body {
     font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
-  }
-  
-  header {
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
     background-color: #1e88e5; /* Blue color */
-    padding: 15px;
+    padding: 15px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  header nav ul {
+}
+
+header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
-  }
-  
-  header nav ul li a {
+    gap: 30px; /* Space between links */
+}
+
+header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
-  }
-  
-  header nav ul li a:hover {
+}
+
+header nav ul li a:hover {
     color: #ffcc80; /* Light orange */
-  }
-  
-  main {
-    max-width: 900px;
-    margin: 20px auto;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    margin: 40px auto;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  #hero {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  #hero h1 {
-    font-size: 2em;
+}
+
+#hero h1 {
+    font-size: 2.5em;
     color: #1e88e5;
-  }
-  
-  #hero p {
-    margin: 15px 0;
-  }
-  
-  #hero .btn {
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#hero .btn {
     display: inline-block;
     background-color: #1e88e5;
     color: white;
@@ -68,66 +69,92 @@
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s;
-  }
-  
-  #hero .btn:hover {
+}
+
+#hero .btn:hover {
     background-color: #1565c0;
-  }
-  
-  #featured {
-    margin-bottom: 30px;
-  }
-  
-  #featured .grid {
+}
+
+/* Featured Posts */
+#featured {
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+#featured h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#featured .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-  }
-  
-  #featured article {
-    background: #f4f4f4;
-    padding: 15px;
+    align-items: start;
+    justify-content: center;
+}
+
+#featured article {
+    background: #f9f9f9;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-  }
-  
-  #featured article img {
+}
+
+#featured article img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 15px;
-  }
-  
-  #featured h3 {
-    margin: 10px 0;
-    font-size: 1.2em;
+}
+
+#featured h3 {
+    font-size: 1.5em;
     color: #1e88e5;
-  }
-  
-  .read-more {
+    margin-bottom: 10px;
+}
+
+#featured p {
+    margin-bottom: 15px;
+}
+
+.read-more {
     color: #1e88e5;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .read-more:hover {
+}
+
+.read-more:hover {
     text-decoration: underline;
-  }
-  
-  #subscribe {
+}
+
+/* Subscribe Section */
+#subscribe {
     text-align: center;
-    margin-top: 30px;
-  }
-  
-  #subscribe input {
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#subscribe h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#subscribe input {
     padding: 10px;
     width: 60%;
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
-  }
-  
-  #subscribe button {
+}
+
+#subscribe button {
     padding: 10px 20px;
     background: #1e88e5;
     color: white;
@@ -135,22 +162,22 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  #subscribe button:hover {
+}
+
+#subscribe button:hover {
     background-color: #1565c0;
-  }
-  
-  footer {
+}
+
+/* Footer */
+footer {
     background-color: #1e88e5;
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 30px;
-  }
-  
-  footer .socials img {
+}
+
+footer .socials img {
     width: 20px;
     margin: 0 10px;
-  }
-  
+}
